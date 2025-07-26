@@ -2026,3 +2026,13 @@ body{
     padding: 1.2rem 1rem;
   }
 }
+
+.contact__card {
+  padding: 2rem;
+}
+
+@media (max-width: 600px) {
+  .contact__card {
+    padding: 1.2rem 1rem;
+  }
+}
