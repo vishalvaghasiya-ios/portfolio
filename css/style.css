@@ -453,6 +453,23 @@ body{
   font-style: italic;
 }
 
+.code-content .class-name{
+  color: #74c0fc;
+  font-weight: 600;
+}
+
+.code-content .function-name{
+  color: #ffd43b;
+}
+
+.code-content .property-name{
+  color: #e2e8f0;
+}
+
+.code-content .array{
+  color: #ff922b;
+}
+
 .hero__scroll-indicator{
   position: absolute;
   bottom: 2rem;
@@ -2282,19 +2299,117 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 1.2rem;
+    padding: 0 0.5rem;
   }
   .hero__code-block {
+    background: var(--bg-2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
     width: 100%;
-    min-width: 0;
-    overflow-x: auto;
-    font-size: 0.9rem;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
   }
+  .code-header {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .code-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff5f56;
+  }
+  .code-dot:nth-child(2) {
+    background: #ffbd2e;
+  }
+  .code-dot:nth-child(3) {
+    background: #27ca3f;
+  }
+  .code-content {
+    padding: 1.5rem;
+    margin: 0;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text);
+    background: transparent;
+    white-space: pre-wrap;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+  .code-content pre {
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
+    font-family: inherit;
+    text-align: left;
+  }
+  .code-content code {
+    color: #e2e8f0;
+    font-family: inherit;
+    white-space: pre-wrap;
+    text-align: left;
+  }
+  .code-content .keyword {
+    color: #ff6b6b;
+    font-weight: 600;
+  }
+  .code-content .string {
+    color: #51cf66;
+  }
+  .code-content .comment {
+    color: #868e96;
+    font-style: italic;
+  }
+  .code-content .class-name {
+    color: #74c0fc;
+    font-weight: 600;
+  }
+  .code-content .function-name {
+    color: #ffd43b;
+  }
+  .code-content .property-name {
+    color: #e2e8f0;
+  }
+  .code-content .array {
+    color: #ff922b;
+  }
   .hero__scroll-indicator {
-    margin-top: 1.5rem;
-    font-size: 0.95rem;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 2rem;
+    font-size: 0.9rem;
     text-align: center;
+    opacity: 1;
+    animation: none;
+  }
+  .scroll-arrow {
+    width: 2px;
+    height: 16px;
+    background: var(--accent);
+    position: relative;
+    animation: scrollBounce 2s infinite;
+  }
+  .scroll-arrow::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+    transform: rotate(45deg);
   }
 }
 
