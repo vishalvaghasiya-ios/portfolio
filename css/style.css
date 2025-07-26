@@ -478,6 +478,60 @@ body{
   }
 }
 
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 60px;
+    padding-bottom: 2rem;
+  }
+  .hero__content {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  .hero__text {
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+  .hero__title {
+    font-size: 1.5rem;
+    word-break: break-word;
+  }
+  .hero__subtitle {
+    font-size: 1rem;
+    padding: 0 0.2rem;
+  }
+  .hero__role {
+    font-size: 1.05rem;
+  }
+  .hero__stats {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+  }
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .btn--primary,
+  .btn--secondary {
+    width: 100%;
+    max-width: 220px;
+    font-size: 1rem;
+  }
+  .hero__visual {
+    margin-top: 1.2rem;
+  }
+  .hero__code-block {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+  .hero__scroll-indicator {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
 /* ===== Grid & Cards ===== */
 .grid{display:grid;gap:2rem 3rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
 .cards{display:grid;gap:1.8rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
