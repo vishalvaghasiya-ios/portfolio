@@ -1811,6 +1811,17 @@ body{
   margin-top: 0.5rem;
 }
 
+/* Optionally, ensure the parent container does not override centering */
+#education .container {
+  display: block;
+  text-align: center;
+}
+
+#education .education__card {
+  text-align: left;
+  display: inline-block;
+}
+
 /* ===== Contact Section ===== */
 .contact__card {
   background: var(--bg-1);
