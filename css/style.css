@@ -1707,6 +1707,8 @@ body{
   
   .period__duration{
     font-size: 0.8rem;
+    text-align: left;
+    align-self: flex-start;
   }
   
   .experience__description p{
