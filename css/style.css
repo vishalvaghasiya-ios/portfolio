@@ -1766,3 +1766,188 @@ body{
     padding: 0.4rem 0.8rem;
   }
 }
+
+/* ===== Education Section ===== */
+.education__card {
+  background: var(--bg-2);
+  border: 1px solid rgba(0, 198, 160, 0.15);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 32px rgba(0, 198, 160, 0.07);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.education__degree {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+}
+.education__cgpa {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(0,198,160,0.08);
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 0.7rem;
+}
+.education__desc {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ===== Contact Section ===== */
+.contact__card {
+  background: var(--bg-1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.13);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  border-radius: var(--radius);
+}
+.contact__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent);
+}
+.contact__card .section__title {
+  margin-bottom: 1rem;
+}
+.contact__desc {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+.contact__list {
+  width: 100%;
+  margin-top: 1.2rem;
+  padding: 0;
+  list-style: none;
+}
+.contact__list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: rgba(255,255,255,0.02);
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 500;
+}
+.contact__list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.contact__list a:hover {
+  text-decoration: underline;
+  color: var(--text);
+}
+
+/* ===== Footer Bottom Section ===== */
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+.footer__section {
+  background: linear-gradient(135deg, rgba(15,23,42,0.97) 60%, rgba(0,198,160,0.08) 100%);
+  border: 1.5px solid rgba(0, 198, 160, 0.13);
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0, 198, 160, 0.10);
+  padding: 2.2rem 1.7rem 1.7rem 1.7rem;
+  margin-bottom: 0.5rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.footer__section:hover {
+  box-shadow: 0 12px 40px rgba(0, 198, 160, 0.18);
+  border-color: var(--accent);
+}
+.footer__section-title {
+  color: var(--accent);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.5px;
+}
+.footer__divider {
+  width: 40px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-bottom: 1.2rem;
+  opacity: 0.15;
+}
+.footer__links li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer__links svg {
+  color: var(--accent);
+  min-width: 18px;
+  margin-right: 4px;
+}
+.footer__cta {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  background: var(--accent);
+  color: var(--bg-1);
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,198,160,0.10);
+}
+.footer__cta:hover {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+.footer__signoff {
+  margin-top: 2.2rem;
+  color: var(--muted);
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .footer__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .footer__section {
+    padding: 1.2rem 1rem;
+  }
+}
